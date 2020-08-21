@@ -1,0 +1,54 @@
+.app {
+    width: calc(20% - 10px);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF;
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    h3 {
+        margin: 10px 0px;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+    p {
+        margin: 10px 0px;
+        font-size: 12px;
+        line-height: 12px;
+        text-transform: uppercase;
+    }
+    button {
+        width: calc(100% - 20px);
+        margin: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .app {
+        width: calc(25% - 10px);
+    }
+}
+@media screen and (max-width: 1200px) {
+    .app {
+        width: calc(33.33% - 10px);
+    }
+}
+@media screen and (max-width: 900px) {
+    .app {
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .app {
+        width: calc(100% - 10px);
+    }
+}

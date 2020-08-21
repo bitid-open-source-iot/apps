@@ -1,0 +1,17 @@
+<div class="page">
+    <div class="app" *ngFor="let app of apps">
+        <img [src]="app.icon" [alt]="app.name" draggable="false">
+
+        <h3>
+            {{ app.name }}
+        </h3>
+
+        <p>
+            {{ app.type }}
+        </p>
+
+        <button mat-stroked-button *ngFor="let o of app.links" (click)="open(o.link)" [disabled]="o.disabled">
+            {{ o.title }}
+        </button>
+    </div>
+</div>
